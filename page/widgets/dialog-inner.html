@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>弹出框内页</title>
+    <meta charset="utf-8" />
+
+</head>
+<body id="body">
+
+
+    <h5>弹出框传参</h5>
+    <p class="text-error">点击下面的"确定"按钮，把上面的标题“弹出的本地页面”作为参数传递给调用的页面！</p>
+    <input type="button" id="btn" class="btn" value="确定" />
+    <script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                console.log(top.wxDialog);
+                top.wxDialog.callback({
+                    id: "Button112",
+                    data: $("h5").text()
+                });
+            });
+        });
+    </script>
+</body>
+</html>

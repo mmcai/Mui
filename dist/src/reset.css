@@ -1,0 +1,147 @@
+﻿/*
+    base.css 项目重置样式文件内容
+    作者：mmcai（拾荒者）
+    创建时间：2013-11-6
+    最后一次更新时间：2013-11-6
+    更新介绍：新建重置样式内容
+    E-mail：mmcai1013@hotmail.com
+    webSite：www.scavengers.com
+    work： http://www.insigma.com.cn/   
+ */
+/*#region --------------重置Reset*/ /*======css for reset======*/
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button, textarea, p, table, thead, tbody, tr, td, th {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background: #fff;
+    color: #666;
+    font: 12px "Microsoft Yahei",verdana;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+em, strong, i {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a, a:link, a:visited {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #666;
+    text-decoration: none;
+}
+
+img, input {
+    border: none;
+}
+
+img {
+    display: block;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+input, textarea, select, button {
+    font: 14px Verdana,Helvetica,Arial,sans-serif;
+}
+
+input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    padding: 3px 4px;
+    font: 12px '宋体',Verdana,Helvetica,Arial,sans-serif;
+    color: #666;
+    vertical-align: middle;
+    outline: none;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button] {
+    *filter: chroma(color=#000000);
+}
+
+select {
+    height: 24px;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+    display: block;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.pull-left, .spanLeft {
+    display: inline;
+    float: left;
+}
+
+.pull-right, .spanRight {
+    display: inline;
+    float: right;
+}
+
+.btns {
+    padding: 4px 12px;
+    border: none;
+    border-radius: 2px;
+    background-color: #2980B9;
+    cursor: pointer;
+    color: #fff;
+    font-family: "微软雅黑";
+}
+
+.btns:hover {
+    background-color: #2e8ece;
+}
+
+.clearfix:after, .clearfix:before {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+.block{
+    display:block;
+}
+.hide{
+    display:none;
+}
+/*#endregion*/

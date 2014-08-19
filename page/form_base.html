@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>基本表单</title>
+    <link href="../css/style.css" rel="stylesheet" />
+</head>
+<body id="body">
+
+    <form id="form_base">
+
+        <div class="page-form">
+            <div class="form">
+                <div class="controls-group">
+                    <label class="controls-lab" for="num">编号：</label>
+                    <div class="controls">
+                        <input type="text" id="num" name="num" class="input">
+                    </div>
+                </div>
+                <div class="controls-group">
+                    <label class="controls-lab" for="category">类别：</label>
+                    <div class="controls">
+                        <select id="category" name="category">
+                            <option>公司新闻</option>
+                            <option>行业新闻</option>
+                            <option>行业动态</option>
+                            <option>公司新闻</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="controls-group">
+                    <label class="controls-lab" for="title">标题：</label>
+                    <div class="controls col-2">
+                        <input type="text" id="title" name="title" class="input">
+                    </div>
+                </div>
+                <div class="controls-group">
+                    <label class="controls-lab" for="myEditor">内容：</label>
+                    <div class="controls">
+                        <script type="text/plain" style="width: 725px" id="myEditor" name="myEditor">
+                            <p>这里我可以写一些输入提示</p>
+                        </script>
+                    </div>
+                </div>
+                <div class="controls-group">
+                    <label class="controls-lab" for="imgs">滚动图片：</label>
+                    <div class="controls">
+                        <input type="text" class="input" id="imgs" name="imgs">
+                    </div>
+                </div>
+                <div class="controls-group">
+                    <label class="controls-lab" for="source">新闻来源：</label>
+                    <div class="controls">
+                        <input type="text" class="input" id="sources" name="source">
+                    </div>
+                </div>
+                <div class="controls-group">
+                    <label class="controls-lab" for="datetime">发布日期：</label>
+                    <div class="controls">
+                        <input type="text" class="input" id="datetime" name="datetime">
+                    </div>
+                </div>
+                <div class="controls-group">
+                    <label class="controls-lab" for="checkflag">审核状态：</label>
+                    <div class="controls">
+                        <select id="checkflag" name="checkflag">
+                            <option>审核通过</option>
+                            <option>审核不通过</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="controls-group">
+                    <label class="controls-lab"></label>
+                    <div class="controls-btn">
+                        <input type="submit" id="submit" name="submit" class="btn btn-primary" value="保存">
+                        <input type="button" class="btn" value="取消">
+                    </div>
+                </div>
+                <div>
+                    <ul class="errMsg"></ul>
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <script>
+
+        function init() {
+            var callback = arguments[0];
+            callback.call(window);
+        }
+    </script>
+</body>
+</html>

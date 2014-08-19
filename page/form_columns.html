@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>多列表格</title>
+    <meta charset="utf-8" />
+    <link href="../css/style.css" rel="stylesheet" />
+</head>
+<body id="body">
+    <div class="page-form">
+        <div class="form-column">
+            <table class="table-form">
+                <tbody>
+                    <tr>
+                        <td class="tdCaption">标题：</td>
+                        <td>
+                            <input type="text" class="input">
+                        </td>
+                        <td class="tdCaption">姓名：</td>
+                        <td>
+                            <input type="text" class="input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdCaption">选择：</td>
+                        <td>
+                            <select class="select">
+                                <option>请选择</option>
+                            </select>
+                        </td>
+                        <td class="tdCaption">性别：</td>
+                        <td>
+                            <div class="chk-inline">
+                                <label class="checkbox inline">男<input type="checkbox"></label>
+                                <label class="checkbox inline">女<input type="checkbox"></label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            选择单位：
+                        </th>
+                        <td>
+                            <select class="select">
+                                <option>办公厅</option>
+                                <option>测试</option>
+                            </select>
+                        </td>
+                        <th>
+                            选择部门：
+                        </th>
+                        <td>
+                            <select class="select">
+                                <option>研发部</option>
+                                <option>销售部</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdCaption">选择单选框：</td>
+                        <td>
+                            <div class="chk-inline">
+                                <label class="radio">
+                                    <input type="radio" value="RadioButton1" name="RadioButton1" id="RadioButton1">
+                                    男
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" value="RadioButton2" name="RadioButton2" id="RadioButton2">
+                                    女
+                                </label>
+                            </div>
+                        </td>
+                        <th>选择学校：</th>
+                        <td>
+                            <select class="select">
+                                <option>中国人民大学</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdCaption">籍贯：</td>
+                        <td>
+                            <select class="mini select">
+                                <option>河南省</option>
+                            </select>
+                            <select class="mini select">
+                                <option>开封市</option>
+                                <option>周口市</option>
+                            </select>
+                            <select class="mini select">
+                                <option>西华县</option>
+                                <option>鹿邑县</option>
+                            </select>
+                        </td>
+                        <th>家庭地址：</th>
+                        <td>
+                            <input type="text" class="input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-top">选择时间：</th>
+                        <td>
+                            <div class="dataTime form-inline">
+                                <div class="startTime input-time">
+                                    <input type="text" class="input mini">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <label class="text-join">到</label>
+                                <div class="endTime input-time">
+                                    <input type="text" class="input mini">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                            </div>
+                        </td>
+                        <th class="text-top">选择时间：</th>
+                        <td>
+                            <div class="dataTime form-inline">
+                                <div class="startTime input-time" readonly="true">
+                                    <input type="text" class="input mini" readonly="true">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <label class="text-join">到</label>
+                                <div class="endTime input-time" readonly="true">
+                                    <input type="text" class="input mini" readonly="true">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdCaption">头发长：</td>
+                        <td>
+                            <input type="text" value="30cm" class="input">
+                        </td>
+                        <th>漂亮程度：</th>
+                        <td>
+                            <select class="select">
+                                <option>一般</option>
+                                <option>能见人</option>
+                                <option>一般吓人</option>
+                                <option>忒吓人</option>
+                                <option>+不能出门的</option>
+                                <option>不错</option>
+                                <option>漂亮</option>
+                                <option>人见人爱</option>
+                                <option>人间尤物</option>
+                                <option>出门就发生战争</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdCaption">添加人员：</td>
+                        <td>
+                            <div class="input-append">
+                                <input type="text" class="input input-medium" value="特帅管理员">
+                                <span class="add-on"><i class="icon-user"></i></span>
+                            </div>
+                        </td>
+                        <th>添加部门：</th>
+                        <td>
+                            <div class="input-append">
+                                <a title="清空" class="clear" href="javascript:void(0);"><i class="icon-trash"></i></a>
+                                <input type="text" class="input" value="研发部">
+                                <span class="add-on"><i class="icon-group"></i></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdCaption">三围：</td>
+                        <td>
+                            <input type="text" style="color: #ff0000;" value="右边的星号，必填项，建议取消" class="input input-require">
+                            <i class="icon-require">*</i>
+                        </td>
+                        <td class="tdCaption">脚长：</td>
+                        <td>
+                            <input type="text" class="input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-top">备注：</th>
+                        <td colspan="3">
+                            <script type="text/plain" style="width: 725px" id="columnsEditor" name="columnsEditor">
+                                <p>这里我可以写一些输入提示</p>
+                            </script>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../js/plugins/jquery.1.8.3.js"></script>
+    <script src="../js/ueditor/ueditor.config.js"></script>
+    <script src="../js/ueditor/ueditor.all.min.js"></script>
+    <script>
+        $(function () {
+            UE.getEditor('columnsEditor', {
+                //这里可以选择自己需要的工具按钮名称,此处仅选择如下五个
+                toolbars: [['FullScreen', 'Source', 'Undo', 'Redo', 'Bold', 'test']],
+                //focus时自动清空初始化时的内容
+                autoClearinitialContent: true,
+                //关闭字数统计
+                wordCount: false,
+                //关闭elementPath
+                elementPathEnabled: false,
+                //默认的编辑区域高度
+                initialFrameHeight: 300
+                //更多其他参数，请参考ueditor.config.js中的配置项
+                //serverUrl: 'Server/controller.js'
+            });
+        });
+    </script>
+</body>
+</html>

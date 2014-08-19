@@ -1,0 +1,72 @@
+﻿/*=====折叠树=====*/
+
+.tree {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    border-left: 1px dotted #666;
+}
+
+.tree-item {
+}
+
+.tree li {
+    position: relative;
+    left: 1px;
+    top: 31px;
+    border-top: 1px dotted #666;
+    width: 15px;
+}
+
+.tree li a {
+    position: relative;
+    top: -16px;
+    left: 15px;
+    z-index: 100;
+    background: transparent;
+    width: 164px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 0 0px 4px;
+    color: #555;
+    cursor: pointer;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.tree li .selected:before {
+    content: "\f00c";
+    color: #58b158;
+}
+
+.tree li > a:hover, .tree li .selected {
+    color: #222;
+    font-weight: 400;
+    background-color: #d9e7f2;
+    border-radius: 2px;
+}
+
+.tree a i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    color: #666;
+    margin: 2px 3px 0 2px;
+    color: #5b88db;
+}
+
+.tree-menu {
+    position: relative;
+    left: 26px;
+    top: -22px;
+    border-left: 1px dotted #666;
+    padding: 0 0 0px 0;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.tree .tree-menu li {
+    top: 30px;
+}

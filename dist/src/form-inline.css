@@ -1,0 +1,25 @@
+﻿
+/*===表格横向布局===*/
+.form-inline {
+    line-height: 45px;
+}
+
+.form-inline .form-group {
+    display: inline-block;
+    margin-right: .875%;
+}
+
+.form-inline .form-group select {
+    width: 15em;
+}
+
+.form-inline .form-group .input {
+    width: 11em !important;
+}
+
+.form-inline .form-group * {
+    display: inline-block;
+}
+
+.form-inline .form-inline .btn {
+}

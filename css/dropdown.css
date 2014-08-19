@@ -1,0 +1,114 @@
+﻿.navtab .dropdown {
+    position: absolute;
+    top: 3px;
+    right: -23px;
+}
+
+
+.navtab .drop-toggle {
+    padding: 6px 6px 5px;
+    text-align: center;
+}
+
+.navtab .drop-toggle i.fa {
+    margin: 0px;
+}
+
+.navtab .drop-toggle:hover i.fa {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+}
+
+.drop-menu {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 160px;
+    z-index: 120;
+    padding: 6px 0;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background: #fff;
+    cursor: default;
+    outline: 0;
+    display: none;
+}
+
+.navtab .drop-menu dt {
+    margin-top: 6px;
+    border-top: 1px solid #bbb;
+}
+
+.navtab .drop-menu dd:first-child {
+}
+
+.drop-menu dd.default-nav {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #bbb;
+}
+
+.drop-menu dd.default-nav a {
+    margin-bottom: 10px;
+}
+
+.closeNav i:hover {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.drop-menu dd, .drop-menu dt {
+    position: relative;
+}
+
+.navtab .drop-menu a {
+    display: block;
+    padding: 5px 0 5px 40px;
+    text-align: left;
+    border: none;
+    border-radius: 0px;
+    color: #555;
+}
+
+
+.navtab .drop-menu a:hover {
+    background: #cde3f3;
+}
+
+.navtab .drop-menu a:hover .d-close {
+    color: #99B3C9;
+    display: block;
+}
+
+.navtab .drop-menu a.active {
+    background:#fff url(imgs/bg_disc.png) 13px center no-repeat;
+    color: #555;
+}
+
+.navtab .drop-menu a.active:hover {
+    background: #cde3f3 url(imgs/bg_disc.png) 13px center no-repeat;
+}
+
+.navtab .drop-menu a i.fa-times {
+    position: absolute;
+    left: 15px;
+    top: 6px;
+    color: #e75e48;
+    font-size:14px;
+}
+
+.navtab .d-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 16px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}

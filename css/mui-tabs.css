@@ -1,0 +1,43 @@
+﻿.mui-tabs {
+    padding: 20px 0;
+}
+
+.tabs-hd {
+    border-bottom: 1px solid #bbb;
+    margin-top: -1px;
+}
+
+
+.tabs-hd li {
+    float: left;
+    margin-right: 2px;
+}
+
+.tabs-hd a {
+    display: block;
+    padding: 8px 20px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #bbb;
+    border-bottom: none;
+    position: relative;
+}
+
+.tabs-hd .active {
+    padding-bottom: 9px;
+    background: #fff;
+    margin-bottom: -1px;
+}
+
+.tabs-body {
+    border: 1px solid #bbb;
+    margin-top: -1px;
+}
+
+.tabs-body .tabs-panel {
+    padding: 15px;
+    display: none;
+}
+
+.tabs-body .active {
+    display: block;
+}

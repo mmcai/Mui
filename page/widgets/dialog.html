@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>弹出框</title>
+    <meta charset="utf-8" />
+    
+</head>
+<body id="body">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <input type="button" id="dialogBtn1" class="span3 btn btn-primary" value="弹出一段文字" />
+            <input type="button" id="Button1" class="span3 btn btn-primary" value="弹出当前页的" />
+            <input type="button" id="Button2" class="span3 btn btn-primary" value="弹出远程文件" />
+            <input type="button" id="Button3" class="span3 btn btn-primary" value="弹出本地文件" />
+        </div>
+        <h3 class="text-error" id="button1Txt">这里的内容是供弹出框弹出使用的！</h3>
+
+        <div class="row-fluid">
+            <input type="button" class="span3 btn btn-inverse" id="Button4" value="带标题的弹出框" />
+            <input type="button" class="span3 btn btn-inverse" id="Button5" value="可拖动的弹出框" />
+            <input type="button" class="span3 btn btn-inverse" id="Button6" value="带遮罩层的弹出框" />
+            <input type="button" class="span3 btn btn-inverse" id="Button7" value="带操作按钮的文本框" />
+        </div>
+
+        <h3>复杂些弹出框</h3>
+        <div class="row-fluid">
+            <input type="button" class="span3 btn btn-info" id="Button8" value="按钮带回调函数的弹出框" />
+            <input type="button" class="span3 btn btn-info" id="Button11" value="带操作按钮的文本框" />
+        </div>
+    </div>
+    <script>
+        //弹出一段文本
+        $("#dialogBtn1").click(function () {
+            wxDialog.show({
+                content: "我是内容，我是一串字符串"
+            });
+        });
+
+        //弹出一段DOM内容
+        $("#Button1").click(function () {
+            wxDialog.show({
+                content: $("#button1Txt").text()
+            });
+        });
+
+        //弹出远程文件——非本项目
+        $("#Button2").click(function () {
+            wxDialog.show({
+                content: "http://www.douban.com/"
+            });
+        });
+
+        //弹出本地文件
+        $("#Button3").click(function () {
+            wxDialog.show({
+                content: "dialoginner.html"
+            });
+        });
+
+        //弹出带标题的弹出框
+        $("#Button4").click(function () {
+            wxDialog.show({
+                title: "我是带标题的弹出框",
+                content: "我是带标题弹出框的内容部分"
+            });
+        });
+
+
+        //弹出可拖动的弹出框
+        $("#Button5").click(function () {
+            wxDialog.show({
+                title: "我是带标题的且有遮罩层的弹出框",
+                move: true,
+                maskLayout: true,
+                content: "我是带标题且有遮罩层的弹出框的内容部分"
+            });
+        });
+
+        //弹出带遮罩层的弹出框
+        $("#Button6").click(function () {
+            wxDialog.show({
+                title: "我是带标题的且有遮罩层的弹出框",
+                maskLayout: true,
+                content: "我是带标题且有遮罩层的弹出框的内容部分"
+            });
+        });
+
+
+        //弹出带按钮的弹出框
+        $("#Button7").click(function () {
+            wxDialog.show({
+                title: "我是带标题的且有遮罩层的弹出框",
+                maskLayout: true,
+                content: "我是带标题且有遮罩层的弹出框的内容部分",
+                confirm: false,
+                cancel: true
+            });
+        });
+
+
+        //弹出按钮执行回调函数的弹出框
+        $("#Button12").click(function () {
+            wxDialog.show({
+                title: "我是带标题的且有遮罩层的弹出框",
+                maskLayout: true,
+                content: "我是带标题且有遮罩层的弹出框的内容部分",
+                confirm: function () {
+                    alert("您点击了确定按钮!");
+                },
+                cancel: function () {
+                    alert("您点击了取消按钮!");
+                }
+            });
+        });
+
+        //弹出按钮执行回调函数的弹出框
+        $("#Button8").click(function () {
+            wxDialog.show({
+                title: "点击按钮执行回调函数",
+                maskLayout: true,
+                content: "点击'确定'按钮，执行一个在窗口关闭之前的回调函数~！<br />点击'取消'按钮执行一个在弹出框关闭之后的回调函数~！",
+                confirm: {
+                    val: "确定",
+                    before: function () {
+                        alert("关闭之前");
+                    }
+                },
+                cancel: {
+                    val: "取消",
+                    after: function () {
+                        alert("关闭之后");
+                    }
+                }
+            });
+        });
+
+        //传参
+        $("#Button11").click(function () {
+            wxDialog.show({
+                id: "Button112",
+                title: "弹出框传参",
+                content: "dialog-inner.html",
+                callback: function () {
+                    alert(arguments[0]);
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>福建省食品药品监督管理局后台管理</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrom=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="福建省食品药品监督管理局后台管理" />
+    <meta name="keywords" content="后台管理，福建省食品药品监督管理局，福建省食药监督局，福建省市场监督管理局" />
+    <meta name="author" content="mmcai" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/form-inline.css" rel="stylesheet" />
+    <link href="css/form-column.css" rel="stylesheet" />
+    <link href="css/tree.css" rel="stylesheet" />
+    <link href="js/widgets/wxDialog/iTouch.dialog.css" rel="stylesheet" />
+    <link href="css/dropdown.css" rel="stylesheet" />
+    <link href="../../css/mui-tabs.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/BsIE/html5shiv.js"></script>
+    <script src="js/BsIE/respond.js"></script>
+    <![endif]-->
+    <!--<base target="frame" />-->
+</head>
+<body class="frame" id="body">
+    <header class="header">
+        <div class="frame-top">
+            <div class="top-skin">
+                <div class="skin-top-inner"></div>
+                <div class="skin-top-inner2"></div>
+            </div>
+            <div class="top-skin-right"></div>
+            <h1>
+                <a href="javascript:void(0);" title="首页">
+                    <img src="css/imgs/logo.png" title="福建省食品药品监督管理局" />
+                </a>
+            </h1>
+            <ul class="component clearfix">
+                <li class="user">
+                    <a href="javascript:void(0);" title="管理员">
+                        <span>欢迎您：</span>
+                        <span>王明涛</span>
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                </li>
+                <li class="pn1">|</li>
+                <li class="setting">
+                    <a href="javascript:void(0);" title="设置">
+                        <i class="fa fa-gear hide"></i>
+                        设置
+                    </a>
+                </li>
+                <li class="pn1">|</li>
+                <li class="msg">
+                    <a href="###">
+                        <span>消息</span>
+                        <i class="msg-num">1</i>
+                    </a>
+                </li>
+                <li class="pn1">|</li>
+                <li class="quit">
+                    <a href="quit.html" rel="extend" target="iframe" data-js="quit.js" data-id="quit" title="退出">
+                        退出
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav></nav>
+    </header>
+
+    <nav class="navtab" id="navTab">
+        <a href="javascript:void(0);" class="nav-btn nav-prev" title="向前"><i class="fa fa-angle-left"></i></a>
+        <a href="javascript:void(0);" class="nav-btn nav-next" title="向后"><i class="fa fa-angle-right"></i></a>
+        <div class="tabsnav">
+            <ul>
+                <li>
+                    <a id="defaultTab" class="active" data-id="default" href="javascript:void(0);" title="欢迎首页"><i class="fa fa-home"></i>欢迎首页</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navDropDown dropdown">
+            <a href="javascription:void(0);" class="drop-toggle" title="导航菜单"><i class="fa fa-angle-down"></i></a>
+            <dl class="drop-menu">
+                <dd class="closeNav"><a data-id="closeNav" href="javascript:void(0);" title="欢迎首页"><i class="fa fa-times"></i>关闭全部</a></dd>
+                <dd class="default-navs drop-nav"><a class="active" data-id="default" href="javascript:void(0);" title="欢迎首页">欢迎首页</a></dd>
+            </dl>
+        </div>
+    </nav>
+
+    <aside class="nav" id="nav">
+        <h1 class="navTitle hide"></h1>
+        <div class="navTop"></div>
+        <div class="navTree">
+            <ul class="tree">
+                <li class="tree-item">
+                    <a class="tree-toggle" href="javascript:void(0);"><i class="fa fa-folder"></i><span>界面组件</span></a>
+                    <ul class="tree-menu">
+                        <li class="tree-item">
+                            <a class="tree-toggle" href="javascript:void(0);"><i class="fa fa-folder"></i><span>选项卡</span></a>
+                            <ul class="tree-menu">
+                                <li><a rel="extend" data-id="tabsHor" data-js="tabs-hor.js" href="page/widgets/tabs-hor.html"><i class="fa fa-file-o"></i>横向选项卡</a></li>
+                                <li><a rel="extend" data-id="tabsVer" data-js="tabs-ver.js" href="page/widgets/tabs-ver.html"><i class="fa fa-file-o"></i>纵向选项卡</a></li>
+                                <li><a rel="extend" data-id="tabsAdvance" data-js="tabs-advance.js" href="page/widgets/tabs-advance.html"><i class="fa fa-file-o"></i>高级选项卡</a></li>
+                            </ul>
+                        </li>
+                        <li><a rel="extend" data-id="dialog" data-js="dialog.js" href="page/widgets/dialog.html"><i class="fa fa-file-o"></i>弹出框</a></li>
+                        <li><a rel="extend" data-id="alert" data-js="alert.js" href="page/widgets/alert.html"><i class="fa fa-file-o"></i>提示框</a></li>
+                        <li><a rel="extend" data-id="dropmenu" data-js="dropmenu.js" href="page/widgets/dropmenu.html"><i class="fa fa-file-o"></i>下拉菜单</a></li>
+                        <li><a rel="extend" data-id="upload" data-js="upload.js" href="page/widgets/upload.html"><i class="fa fa-file-o"></i>上传</a></li>
+                        <li><a rel="extend" data-id="editor" data-js="editor.js" href="page/widgets/editor.html"><i class="fa fa-file-o"></i>文本编辑器</a></li>
+                    </ul>
+                </li>
+                <li class="tree-item">
+                    <a href="#" class="tree-toggle"><i class="fa fa-folder"></i><span>典型页面</span></a>
+                    <ul class="tree-menu">
+                        <li><a rel="extend" data-id="formBase" target="iframe" data-js="form_base.js" href="page/form_base.html"><i class="fa fa-file-o"></i>单列表单</a></li>
+                        <li><a rel="extend" data-id="formColumns" data-js="form_columns.js" href="page/form_columns.html"><i class="fa fa-file-o"></i>多列表单</a></li>
+                        <li><a rel="extend" data-id="tableBase" data-js="table_base.js" href="page/table_base.html"><i class="fa fa-file-o"></i>基本表格</a></li>
+                        <li><a rel="extend" data-id="tableAdvance" data-js="table_advance.js" href="page/table_advance.html"><i class="fa fa-file-o"></i>高级表格</a></li>
+                        <li><a rel="extend" data-id="searchInline" data-js="search-inline.js" href="page/search-inline.html"><i class="fa fa-file-o"></i>单行搜索</a></li>
+                        <li><a rel="extend" data-id="searchBlock" data-js="search-block.js" href="page/search-block.html"><i class="fa fa-file-o"></i>多行搜索</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a target="_blank" href="login.html"><i class="fa fa-file-o"></i><span>登录页</span></a>
+                </li>
+                <li>
+                    <a target="_blank" href="404.html"><i class="fa fa-file-o"></i><span>404</span></a>
+                </li>
+                <li>
+                    <a target="_blank" href="500.html"><i class="fa fa-file-o"></i><span>500</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="main" id="main">
+        <div id="defaultPanel" class="defaultPanel page-panel" data-id="defaultPanel">
+            <h1>欢迎使用福建省食品药品后台管理系统</h1>
+            <div class="mui-tabs">
+                <ul class="tabs-hd clearfix">
+                    <li><a href="#home" class="active">显示信息</a></li>
+                    <li><a href="#panel">系统参数</a></li>
+                    <li><a href="#copy">版权说明</a></li>
+                </ul>
+                <div class="tabs-body">
+                    <div id="home" class="tabs-panel active">这里是显示信息的内容</div>
+                    <div id="panel" class="tabs-panel">这里是系统参数的内容</div>
+                    <div id="copy" class="tabs-panel">这里是版权说明的内容</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--<iframe id="frame" name="frame"></iframe>-->
+    <!--JS代码-->
+    <script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/plugins/handlebars-v1.3.0.js"></script>
+    <script src="js/common.js"></script>
+    <script type="text/x-handlebars-template" id="menu-template">
+        {{#each data}}
+        {{#if submenu}}
+        <li class="tree-item">
+            <a href="javascript:void(0);" data-id="{{id}}" class="tree-toggle"><i class="fa fa-folder"></i>{{title}}</a>
+            <ul class="tree-menu">
+                {{#each submenu}}
+                {{#if submenu}}
+                <li class="tree-item">
+                    <a href="javascript:void(0);" data-id="{{id}}" class="tree-toggle"><i class="fa fa-folder"></i>{{title}}</a>
+                    <ul class="tree-menu">
+                        {{#each submenu}}
+                        <li><a rel="extend" data-id="{{id}}" target="iframe" data-js="{{id}}.js" href="{{src}}"><i class="fa fa-file-o"></i>{{title}}</a></li>
+                        {{/each}}
+                    </ul>
+                </li>
+                {{else}}
+                <li><a rel="extend" data-id="{{id}}" target="iframe" data-js="{{id}}.js" href="{{src}}"><i class="fa fa-file-o"></i>{{title}}</a></li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </li>
+        {{else}}
+        <li><a href="{{src}}" title="{{title}}" target="iframe" data-id="{{id}}"><i class="fa fa-file-o"></i>{{title}}</a></li>
+        {{/if}}
+        {{/each}}
+    </script>
+    <!--JS代码-->
+    <script src="js/plugins/mui.navTab.js"></script>
+    <script src="js/navData.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/plugins/mui.tree.js"></script>
+    <script src="js/plugins/mui.dropdown.js"></script>
+    <script src="js/plugins/mui.tabs.js"></script>
+</body>
+</html>

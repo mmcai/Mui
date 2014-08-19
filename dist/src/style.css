@@ -1,0 +1,412 @@
+﻿/*
+    @import url('reset.css');
+    @import url('font-awesome.css');
+    浙大网新易盛公司门户网站样式文件
+    作者：mmcai（蔡猛）
+    创建时间：2014-7-24
+    最后一次更新时间：2014-7-24
+    更新介绍：公司网站登录页面样式
+    E-mail：mmcai1013@hotmail.com
+    webSite：www.mmcai.cn
+    work： http://www.insigma.com.cn/   
+*/
+
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 84px;
+    border-bottom: 2px solid #10619A;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.header li {
+    float: left;
+}
+
+.nav {
+    position: absolute;
+    left: 0px;
+    top: 86px;
+    bottom: 0px;
+    width: 200px;
+    z-index: 100;
+    border-right: 1px solid #C3CED5;
+}
+
+
+.main {
+    position: absolute;
+    left: 201px;
+    top: 86px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #fff;
+    z-index: 110;
+    overflow: auto;
+}
+
+.main iframe {
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-list, .page-table, .page-form, .page-search, .page-pagination, .page-heading {
+    margin: 10px;
+}
+
+.breadcrumb {
+    padding: 8px 0;
+}
+
+.breadcrumb:after, .breadcrumb:before, .form-inline:after, .form-inline:before {
+    display: table;
+    content: "";
+}
+
+.breadcrumb:after, .form-inline:after {
+    clear: both;
+}
+
+.breadcrumb li {
+    float: left;
+}
+
+.breadcrumb li:first-child {
+    padding-right: 5px;
+}
+
+.breadcrumb li a:hover {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.breadcrumb > li + li:before {
+    content: "/\00a0";
+    padding: 0 5px;
+    color: #ccc;
+}
+
+.table {
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 20px;
+}
+
+.table th {
+    padding-left: 8px;
+    font-weight: normal;
+    text-align: left;
+    background: -moz-linear-gradient(center top, #f8f8f8, #f4f4f4) repeat scroll 0 0 #f7f7f7;
+    background: -webkit-linear-gradient(top, #f8f8f8, #f4f4f4);
+    background: linear-gradient(center top, #f8f8f8, #f4f4f4) repeat scroll 0 0 #f7f7f7;
+    background-color: #F7F7F7;
+    color: #999;
+    border-width: 1px 0;
+    border-color: #c8c8c8;
+    border-style: solid;
+    height: 24px;
+    line-height: 24px;
+}
+
+.table td {
+    border-top: 1px solid #e2e2e2;
+    color: #555;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 0 8px;
+    height: 38px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table tr:hover, .table .row-hover {
+    background: #f5f5f5;
+}
+
+.table .row-selectd {
+    background: #FFFFD5;
+}
+
+.table .mui-link {
+    display: block;
+    float: left;
+}
+
+.table .mui-link-group {
+    position: relative;
+    height: 100%;
+}
+
+.table .mui-link {
+    position: absolute;
+    top: 7px;
+    font-size: 14px;
+}
+
+.table .mui-link:hover {
+    font-size: 22px;
+    margin-left: -2px;
+    margin-bottom: -2px;
+}
+
+.table .mui-edit {
+    left: 0px;
+}
+
+.table .mui-edit:hover {
+    color: #5AB146;
+}
+
+.table .mui-del {
+    left: 30px;
+}
+
+.table .mui-del:hover {
+    color: #C52020;
+}
+
+.table-chk .mui-chk {
+    width: 30px;
+}
+
+
+.page-pagination {
+}
+
+.page-pagination:after, .page-pagination:before {
+    display: table;
+    content: "";
+}
+
+.page-pagination:after {
+    clear: both;
+}
+
+.page-pagination ul {
+    float: right;
+}
+
+.page-pagination li {
+    float: left;
+    margin: 0 2px;
+}
+
+.page-pagination a {
+    padding: 5px 10px;
+    display: inline-block;
+    color: #797979;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.page-pagination a:hover {
+    border: none;
+}
+
+.page-pagination .active a, .page-pagination li:hover a {
+    background-color: #18679F;
+    color: #fff;
+    padding: 6px 11px;
+    border: none;
+}
+
+.page-pagination .disabled a {
+    cursor: no-drop;
+    color: #c7c7c7;
+}
+
+.page-pagination .disabled:hover a {
+    background: none;
+    color: #c7c7c7;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+}
+
+.page-pagination .prev {
+}
+
+.page-pagination .next {
+}
+
+
+/*=====表单=====*/
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a.btn {
+    color: #fff;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #39b3d7;
+    border-color: #269abc;
+}
+
+.btn-primary {
+    background-color: #055F9F;
+    border-color: #18679F;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-color: #378ECB;
+    border-color: #055F9F;
+    color: #ffffff;
+}
+
+.input {
+    display: block;
+    width: 200px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+.select {
+    width: 225px;
+    height: 34px;
+    padding: 6px 12px;
+}
+
+.mini {
+    width: 110px;
+}
+
+.middle {
+    width: 180px;
+}
+
+.larger {
+    width: 250px;
+}
+
+.larger-x {
+    width: 400px;
+}
+
+
+
+
+/*====表格纵向布局*/
+.form-block {
+}
+
+.chk-block {
+    padding: 10px 0 0 0;
+}
+
+.chk-block label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.chk-block input[type=checkbox], .chk-block input[type=radio] {
+    margin: -2px 3px 0 0;
+}
+
+.chk-inline {
+}
+
+.chk-inline label {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+.chk-inline input[type=checkbox], .chk-block input[type=radio] {
+    margin: -2px 3px 0 0;
+}
+
+.controls-group {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.controls-lab {
+    display: block;
+    float: left;
+    min-width: 120px;
+    text-align: right;
+    margin: 8px 20px 0 0;
+}
+
+.controls {
+    margin: 0 0px 0 140px;
+}
+
+.controls .input {
+    float: left;
+}
+
+.controls select {
+    width: 225px;
+    height: 34px;
+    padding: 6px 12px;
+}
+
+/*验证样式*/
+input.error, select.error, input:focus.error, select:focus.error, :focus.error {
+    border-color: #b94a48;
+    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.075) inset;
+}
+
+label.error {
+    display: inline-block;
+    padding: 9px 10px 0 20px;
+    font-size: 13px;
+    color: #ff0000;
+}
+
+label.error i {
+    float: left;
+    margin-right: 5px;
+}

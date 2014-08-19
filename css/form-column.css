@@ -1,0 +1,255 @@
+﻿.form-column {
+    /*padding: 0 0 20px 80px;*/
+}
+
+.form-column .table-form {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.form-column .table-form td {
+    padding: 4px 8px;
+    min-width: 300px;
+    width:300px;
+}
+
+.form-column .table-form td, .form-column .table-form th {
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.form-column .table-form td.tdCaption, .form-column .table-form th {
+    color: #293a59;
+    font-weight: normal;
+    padding: 4px 10px 4px 0;
+    text-align: right;
+    width: 105px;
+}
+
+.form-column .table-form td.text-top, .form-column .table-form th.text-top {
+    padding-bottom: 0;
+    padding-top: 8px;
+    vertical-align: top;
+}
+
+.form-column .table-form td select, .form-column .table-form td input, .form-column .table-form td button, .form-column .table-form td textarea {
+    margin-bottom: 0;
+}
+
+.form-column .table-form td textarea.textarea {
+    border-radius: 2px;
+    height: 150px;
+    min-height: 150px;
+    outline: medium none;
+    resize: none;
+    /*width: 98%;*/
+}
+
+.form-column .table-form td textarea.textarea:focus {
+    border-color: #b4b4bf;
+    box-shadow: none;
+}
+
+.form-column .table-form td .file-upload {
+    margin-bottom: 10px;
+}
+
+.form-column .table-form td .input-require, .form-column .table-form td .icon-require {
+    float: left;
+}
+
+.form-column .table-form td .icon-require {
+    color: #ff0000;
+    margin: 9px 0 0 5px;
+}
+
+.form-column .table-form td.text-center {
+    text-align: center;
+}
+
+.form-column .table-form td .form-inline {
+}
+
+.form-column .table-form td .form-inline * {
+    vertical-align: middle;
+}
+
+.form-column .table-form td .form-inline .inline {
+    padding: 0;
+}
+
+.form-column .table-form td .form-inline .radio {
+}
+
+.form-column .table-form td .form-inline > input {
+    margin: 0;
+}
+
+.form-column .table-form td .breadcrumb {
+    margin-bottom: 0;
+}
+
+.form-column .table-form td .input-append {
+}
+
+.form-column .table-form td .input-append input[type="text"] {
+    /*width: 178px;*/
+}
+
+.form-column .table-form td .input-append span.add-on {
+    cursor: pointer;
+}
+
+.form-column .table-form td .input-append span.add-on i {
+    color: #1f91f2;
+}
+
+.form-column .table-form td .input-append a.clear {
+    display: inline-block;
+    float: right;
+    font-size: 13px;
+    margin: 5px 20px 0 0;
+    width: 35px;
+}
+
+.form-column .form-inline{
+    line-height:27px;
+}
+
+.dataTime {
+}
+
+.dataTime .input-time, .dataTime .text-join {
+    float: left;
+}
+
+.dataTime .text-join {
+    display: block;
+    padding: 4px 10px;
+}
+
+.dataTime .input-time {
+    position:relative;
+    background-color: #fff;
+    border: 1px solid #b4b4bf;
+    width: 120px;
+}
+
+.dataTime .input-time[readonly=true] {
+    background-color:#eee;
+}
+
+
+.dataTime .input-time input[type="text"] {
+    border: medium none;
+    box-shadow: none;
+    color: #1f91f2;
+    margin: 4px 0 4px 6px;
+    padding: 0;
+}
+
+.dataTime input[disabled], .dataTime input[readonly] {
+    cursor:no-drop;
+    background-color:transparent;
+}
+
+.dataTime .input-time input[type="text"]:focus {
+    border: medium none;
+    box-shadow: none;
+}
+
+.dataTime .input-time .fa {
+    position:absolute;
+    right:5px;
+    top:8px;
+    color: #bf4a04;
+    cursor: pointer;
+    float: right;
+}
+
+.form-column .table-border {
+    border-left: 1px solid #cfcfd6;
+    border-top: 1px solid #cfcfd6;
+}
+
+.form-column .table-border td, .form-column .table-border th {
+    border-bottom: 1px solid #cfcfd6;
+    border-right: 1px solid #cfcfd6;
+}
+
+.form-column .table-border td.tdCaption, .form-column .table-border th {
+    background: none repeat scroll 0 0 #d7e2f8;
+    color: #2b2d31;
+}
+
+.form-column fieldset legend.text-coffee {
+    color: #41414c;
+}
+
+.form-column table.table-info {
+}
+
+.form-column .table-info td {
+    color: #0b8ed2;
+    cursor: default;
+}
+
+.form-column .table-info td.tdCaption, .form-column .table-info th {
+}
+
+.form-column table.table-single {
+    width: 760px;
+}
+
+.form-column table.table-single td {
+    width: 550px;
+}
+
+.form-column table.table-single td.tdCaption, .form-column table.table-single th {
+    width: 90px;
+}
+
+.form-column .form-horizontal .control-group {
+    margin-bottom: 10px;
+}
+
+.form-column .form-horizontal .textarea {
+    border-radius: 2px;
+    box-shadow: none;
+    height: 125px;
+    width: 600px;
+}
+
+.form-column .form-horizontal .textarea:focus {
+    border-color: #b4b4bf;
+    box-shadow: none;
+}
+
+
+.chk-block {
+    padding: 10px 0 0 0;
+}
+
+.chk-block label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.chk-block input[type=checkbox], .chk-block input[type=radio] {
+    margin: -2px 3px 0 0;
+}
+
+.chk-inline {
+}
+
+.chk-inline label {
+    display: inline-block;
+    margin: 5px 10px 10px 0;
+}
+
+.chk-inline input[type=checkbox], .chk-block input[type=radio] {
+    margin: -2px 3px 0 3px;
+}

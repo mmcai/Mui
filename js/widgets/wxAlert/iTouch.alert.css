@@ -1,0 +1,25 @@
+﻿/*  CSS Document */
+/*
+**      作者：     mmcai
+**      制作时间：       2013-9-22
+**      样式文件描述：  消息提示框样式文件
+**      涉及区块：       正确提示，错误提示，警告，正在加载等不同的状态内容
+**      right——正确
+**      error——错误
+**      waring——警告
+**      quest——疑问
+**      loading——正在加载                        
+*/
+.wx-alert { padding: 5px 20px; position: absolute; z-index: 100; }
+.alert-left, .alert-center, .alert-center span, .alert-right { background-image: url(imgs/sprite-alerts.png); background-repeat: no-repeat; }
+.alert-left { width: 8px; height: 93px; float: left; background-position: -35px -400px; }
+.alert-center { float: left; min-width: 200px; width: auto!important; width: 200px; height: 93px; background: url(imgs/tubiao3.png) repeat-x; }
+.alert-center span { display: block; white-space: nowrap; padding: 0 15px 0 80px; height: 51px; line-height: 51px; margin-top: 21px; font-family: "微软雅黑",'宋体'; font-size: 14px; color: #000; }
+.alert-center span.right { background-position: 0 0; }
+.alert-center span.loading { background: none; }
+.alert-center span.error { background-position: 0 -200px; }
+.alert-center span.warning { background-position: 0 -300px; }
+.alert-center span.quest { background-position: 0 -100px; }
+.alert-center img.loading { position: absolute; left: 50px; top: 33px; }
+.alert-right { float: left; width: 8px; height: 93px; background-position: -35px -500px; }
+.alert-frame { position: absolute; top: 0; left: 0; z-index: -1; filter: alpha(opacity=0); }

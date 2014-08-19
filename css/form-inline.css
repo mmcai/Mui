@@ -1,0 +1,54 @@
+﻿
+/*===表格横向布局===*/
+.form-inline {
+
+}
+
+.form-inline .form-group {
+    display: inline-block;
+    margin-right: .875%;
+}
+
+.form-inline .form-group select {
+    width: 15em;
+}
+
+.form-inline .dataTime {
+}
+
+.form-inline .form-group .input {
+    width: 11em;
+    font-size:12px;
+    padding:7px 12px;
+}
+
+.form-inline .form-group .input-time {
+    position: relative;
+}
+
+.form-inline .form-group .input-time i {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.form-inline .form-group .text-join {
+    display: inline-block;
+    padding:0 10px;
+}
+
+.form-inline .form-group .input-time .input {
+    width: 100px;
+}
+
+.form-inline .form-group * {
+    display: inline-block;
+}
+
+.form-inline .form-group select *{
+    display:block;
+}
+
+.form-inline .form-inline .btn {
+}

@@ -1,0 +1,24 @@
+﻿/*
+    弹出框样式文件
+    作者：mmcai
+    制作时间：2013-8-15
+*/
+/*#region 弹出框样式文件*/
+.wx-dialog { position: absolute; left: 200px; top: 80px; }
+.dialog-outer { border-radius: 5px; border: 1px solid #9A9A9A; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); background: #fff; text-align: left; }
+.dialog-inner {  }
+.dialog-header { cursor: default; }
+h2.dialog-title { width: auto; *widht:385px; height: 30px; line-height: 30px; margin:0px; padding-left: 25px; font-size: 14px; color: #666; font-weight: 400; border-bottom: 2px solid #2187DF; }
+.dialog-close { display: block; position: absolute; top: 2px; right: 2px; width: 30px; height: 28px; line-height: 28px; text-align: center; border-left: 1px solid #ddd; color: #68767b; font-size: 1.5em; text-decoration: none; background: transparent; }
+.dialog-close:hover { color: #1E8EEF; text-decoration: none; }
+.dialog-body { }
+.dialog-body-inner { padding: 5px; }
+.dialog-content { width: 400px; height: 250px; background: #fff; }
+.dialog-content iframe { border: none; overflow: hidden; overflow-y: auto; width: 100%; height: 100%; border:none; }
+.dialog-loading { position: absolute; left: 1px; top: 30px; bottom: 37px; right: 1px; background: #fff url(/css/Frame/imgs/loading.gif) center 75px no-repeat; z-index: 40; }
+.dialog-button { height: 34px; *widht:385px; border-top: 1px solid #c0c0c0; text-align: right; display: none; }
+.dialog-button .dialogBtn { width: 61px; height: 26px; line-height: 26px; border: none; cursor: pointer; margin: 4px 10px 0 0; font-size: 12px; letter-spacing: 3px; }
+.dialog-button .confirmBtn { background: url(imgs/confirm.jpg) 0 0 no-repeat; color: #ffffff; }
+.dialog-button .cancelBtn { background: url(imgs/cancel.gif) 0 0 no-repeat; color: #707070; }
+.dialog-button .cancelBtn:hover, .dialog-button .confirmBtn:hover { background-position: 0px -35px; }
+/*#endregion*/

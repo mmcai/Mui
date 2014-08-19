@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>福建省食品药品监督管理局后台管理</title>
+    <meta charset="utf-8" />
+
+</head>
+<body id="body">
+
+    <div class="page-heading">
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li class="active"> 列表页</li>
+        </ul>
+    </div>
+
+    <div class="page-form">
+        <div class="form">
+            <div class="controls-group">
+                <label class="controls-lab" for="num">上传：</label>
+                <div class="controls">
+                    <span id="uploadBtn">添加</span>
+                    <div id="divFileProgressContainer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Upload/swfupload/swfupload.js"></script>
+    <script src="Upload/swfupload/plugins/swfupload.cookies.js"></script>
+    <script src="Upload/swfupload/plugins/swfupload.speed.js"></script>
+    <script src="Upload/swfupload/handlers.js"></script>
+    <script src="Upload/swfupload/progress.js"></script>
+    <script src="Upload/swfupload/DefaultConfig.js"></script>
+    <script src="Upload/swfupload/uploadInit.js"></script>
+    <script>
+        var
+    $FileTypes = "*.jpg;*.png;*.gif;*.bmp;",
+    $imgArr = $("#imgArr"),
+    $cacheArr = {},
+    $editArr = {};
+
+        //创建完上传控件对象之后，在这里进行设置参数
+        $(function () {
+            //如果不存在swfu对象，就阻止脚本的进一步运行
+            if (!swfu) return false;
+
+            //设置上传的类型
+            swfu.setFileTypes($FileTypes, "上传类型");
+
+            //设置swfUpload 传递参数的形式：GET或者POSt
+            swfu.setUseQueryString(false);
+
+        });
+
+        //上传完成之后执行的事件函数
+        function uploadDoneCallback() {
+            /// <summary>
+            /// 上传完毕后，新数据可以在这里动态的插入
+            /// </summary>
+            /// <param name="file">上传文件的对象</param>
+
+            //console.log("每一个文件上传成功之后，在这里执行成功后的事件", arguments[0], arguments[1],this);
+
+            //设置返回值，方便下面的删除
+            var
+                    fileProgressId = this.id,
+                    $viewBox = $("#viewImg"),
+                    $progressWrap = $("#" + fileProgressId);
+
+            $progressWrap.attr("fileDataId", arguments[0]);
+
+            //下面可以进行填充了
+            //console.log(this, arguments[0]);
+            var $result = arguments[0];
+            var _result = eval("(" + $result + ")");
+
+        }
+
+        //自定义事件——删除中的文件
+        function cancelUploadCallback() {
+
+            var
+                    $this = this,
+                    fileProgressId = this.fileProgressID,
+                    $progressId = $("#" + arguments[0]),
+                    $fileDataKey = $progressId.attr("fileUrl");
+
+            // console.log(this.fileProgressID, fileProgressId, $progressId, $fileDataKey);
+
+
+            //console.log("del");
+
+            //异步删除上传的文件
+            $.ajax({
+                url: "",
+                type: "post",
+                data: "",
+                success: function (msg) {
+                    // console.log(msg);
+                    $this.setCancelled();
+                },
+                error: function () {
+
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
